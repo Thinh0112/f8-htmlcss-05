@@ -10,3 +10,410 @@ body {
   font-size: 1.6rem;
   font-family: "Open Sans", serif;
 }
+
+/* Common */
+:root {
+  --primary-color: #212832;
+  --secondary-color: #696d76;
+}
+.container {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  --height: 58px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 149px;
+  height: var(--height);
+  border-radius: 8px;
+  background: var(--primary-color);
+  color: #fff;
+  font-weight: 600;
+  line-height: 1.75;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.section-intro {
+  margin-bottom: 12px;
+  padding-left: 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: #696d77;
+  line-height: 1.75;
+}
+
+.section-intro::before {
+  position: absolute;
+  left: 0;
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 2px;
+  background: #696d77;
+}
+
+.section-desc-lv1 {
+  margin-top: 20px;
+  width: 470px;
+  color: var(--secondary-color);
+  font-size: 1.8rem;
+  line-height: 1.66;
+}
+/* Header */
+.header {
+  padding-top: 42px;
+  position: sticky;
+  top: -24px;
+  z-index: 1;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-list {
+  margin-left: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-item {
+  padding: 4px 24px;
+}
+
+.navbar-item:hover {
+  cursor: pointer;
+}
+
+.navbar-item:hover .navbar-link {
+  color: #212832;
+  text-shadow: 1px 0 0 currentColor;
+}
+
+.navbar-item:hover .navbar-link::after {
+  content: "";
+  display: block;
+  height: 1px;
+  border-radius: 0.5px;
+  background: #7264d6;
+}
+
+.navbar-link {
+  color: var(--secondary-color);
+  line-height: 1.75;
+}
+
+.header-btn {
+  margin-left: auto;
+}
+
+.btn-login {
+  margin-right: 28px;
+  color: var(--primary-color);
+  font-weight: 600;
+  line-height: 1.75;
+}
+
+.btn-signup {
+  width: 113px;
+  --height: 52px;
+  border-radius: 6px;
+}
+
+/* Hero */
+.hero {
+  margin-top: 76px;
+}
+
+.hero-inner {
+  display: flex;
+  align-items: center;
+  column-gap: 160px;
+}
+
+.hero-left {
+  width: 46.15%;
+}
+.hero-heading {
+  width: 500px;
+  color: var(--primary-color);
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 1.16;
+}
+
+.hero-heading span {
+  color: #7264d6;
+}
+
+.hero-desc {
+  width: 100%;
+}
+
+.hero-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 23px 8px 23px 23px;
+  height: 74px;
+  margin-top: 40px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 16px 42px 0px rgba(0, 0, 0, 0.07);
+}
+
+.hero-input {
+  border: none;
+  outline: none;
+  padding: 0;
+  font-family: "Open Sans", serif;
+}
+
+.hero-input::placeholder {
+  font-family: "Open Sans", serif;
+  color: var(--secondary-color);
+  line-height: 1.75;
+}
+
+.hero-btn {
+  background: #7264d6;
+  border-color: transparent;
+}
+
+.hero-note {
+  margin-top: 20px;
+  color: var(--secondary-color);
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.71;
+}
+
+.hero-right {
+  position: relative;
+  width: 296px;
+  height: 562px;
+  border-radius: 40px;
+  border: 12px solid #212832;
+  background: #fff;
+}
+
+.hero-right::before {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -12px;
+  z-index: 1;
+  content: "";
+  display: block;
+  width: 144px;
+  height: 36px;
+  border-radius: 0px 0px 18px 18px;
+  background: #3c2f60;
+}
+
+.hero-mobile {
+  padding: 40px 11px 30px;
+}
+
+.mobile__card {
+  padding: 16px;
+  margin-bottom: 24px;
+  width: 250px;
+  height: 150px;
+  border-radius: 20px;
+  background: linear-gradient(76deg, #6657d2 11.52%, #9487ea 70.78%);
+}
+
+.mobile__card-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile__card-heading {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.mobile__card-money {
+  display: block;
+  margin-bottom: 32px;
+  color: #fff;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.mobile__content {
+  display: flex;
+  column-gap: 12px;
+}
+
+.mobile__card-duration,
+.mobile__card-owner {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 5px;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.mobile__card-date,
+.mobile__card-name {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.hero-mobile__transections-heading-row {
+  margin-bottom: 28px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-mobile__transections-heading {
+  color: #31456a;
+  font-weight: 600;
+}
+
+.hero-mobile__transections-row {
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+  column-gap: 14px;
+}
+
+.hero-mobile__transections-column {
+  width: 100%;
+}
+
+.hero-mobile__transections-mini-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-mobile__transections-feature,
+.hero-mobile__transections-calc {
+  margin-bottom: 6px;
+  color: var(--primary-color);
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.hero-mobile__transections-info,
+.hero-mobile__transections-time {
+  color: #696d76;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.hero-circle-top {
+  position: absolute;
+  top: 40px;
+  left: 26px;
+}
+
+.hero-circle-bottom {
+  position: absolute;
+  top: 92px;
+  right: 18px;
+}
+
+.hero-deposit {
+  position: absolute;
+  top: 111px;
+  left: -112px;
+  padding: 14px 10px;
+  display: flex;
+  align-items: center;
+  width: 174px;
+  height: 46px;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.07);
+}
+
+.hero-deposit__text {
+  margin-left: 8px;
+  color: #31456a;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.hero-deposit__money {
+  margin-left: 19px;
+  color: #4ab5e3;
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+.hero-interest {
+  position: absolute;
+  top: 115px;
+  right: -198px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-color: #da6464;
+}
+
+.hero-interest-percent {
+  color: #fff;
+  font-size: 4.4rem;
+  font-weight: 600;
+}
+
+.hero-interest-text {
+  color: #fff;
+}
+
+.hero-secured {
+  position: absolute;
+  bottom: 49px;
+  right: -86px;
+  padding: 20px 15px 22px 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 11px;
+  width: 124px;
+  height: 68px;
+  border-radius: 10px;
+  background: #439f90;
+}
+
+.hero-secure__content-money {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.hero-secure__content-text {
+  margin-top: 5px;
+  color: #fff;
+  font-size: 0.8rem;
+  line-height: 1;
+}
