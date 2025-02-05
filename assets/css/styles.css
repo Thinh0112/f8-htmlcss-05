@@ -64,6 +64,15 @@ a {
   background: #696d77;
 }
 
+.section-heading {
+  margin-bottom: 20px;
+  width: 470px;
+  color: var(--primary-color);
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
 .section-desc-lv1 {
   margin-top: 20px;
   width: 470px;
@@ -71,6 +80,13 @@ a {
   font-size: 1.8rem;
   line-height: 1.66;
 }
+
+.section-desc-lv2 {
+  margin-bottom: 28px;
+  color: var(--secondary-color);
+  line-height: 1.75;
+}
+
 /* Header */
 .header {
   padding-top: 42px;
@@ -135,7 +151,7 @@ a {
 
 /* Hero */
 .hero {
-  margin-top: 76px;
+  margin: 76px 0 160px;
 }
 
 .hero-inner {
@@ -191,6 +207,7 @@ a {
 .hero-btn {
   background: #7264d6;
   border-color: transparent;
+  cursor: pointer;
 }
 
 .hero-note {
@@ -340,6 +357,7 @@ a {
   position: absolute;
   top: 111px;
   left: -112px;
+  z-index: 1;
   padding: 14px 10px;
   display: flex;
   align-items: center;
@@ -416,4 +434,77 @@ a {
   color: #fff;
   font-size: 0.8rem;
   line-height: 1;
+}
+
+/* How It Works */
+.how-it-works__inner {
+  display: flex;
+  column-gap: 230px;
+  align-items: center;
+}
+.how-it-works__media {
+  position: relative;
+  width: 40.17%;
+}
+
+.how-it-works__image {
+  position: relative;
+}
+
+.how-it-works__image::before {
+  content: url(../icons/how-it-works-card.svg);
+  position: absolute;
+  top: 76px;
+  right: 62px;
+}
+
+.how-it-works__image::after {
+  content: url(../img/how-it-works-bg.png);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.how-it-works__img {
+  width: 456px;
+}
+
+.how-it-works__noti {
+  padding: 15px;
+  position: absolute;
+  bottom: 96px;
+  right: -100px;
+  border-radius: 8px;
+  background: #fffdfa;
+  box-shadow: 0px 14px 34px 0px rgba(0, 0, 0, 0.07);
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.how-it-works__noti-success {
+  color: var(--primary-color);
+  font-family: Inter;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.how-it-works__noti-active {
+  margin-top: 5px;
+  color: var(--secondary-color);
+  font-family: Inter;
+  font-size: 1.2rem;
+}
+
+.how-it-works__heading {
+  margin-bottom: 70px;
+}
+
+.how-it-works__heading-item {
+  margin-bottom: 16px;
+  color: var(--primary-color);
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 1.45;
 }
