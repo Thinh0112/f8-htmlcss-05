@@ -42,13 +42,14 @@ a {
 
 .btn:hover {
   opacity: 0.9;
+  cursor: pointer;
 }
 
 .section-intro {
   margin-bottom: 12px;
   padding-left: 30px;
   position: relative;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   color: #696d77;
   line-height: 1.75;
@@ -58,7 +59,6 @@ a {
   position: absolute;
   left: 0;
   content: "";
-  display: inline-block;
   width: 18px;
   height: 2px;
   background: #696d77;
@@ -437,11 +437,12 @@ a {
 }
 
 /* How It Works */
-.how-it-works__inner {
+.how-it-works-inner {
   display: flex;
   column-gap: 230px;
   align-items: center;
 }
+
 .how-it-works__media {
   position: relative;
   width: 40.17%;
@@ -507,4 +508,330 @@ a {
   font-size: 2.2rem;
   font-weight: 600;
   line-height: 1.45;
+}
+
+/* Features */
+.features {
+  margin: 160px 0;
+}
+
+.features-inner {
+  display: flex;
+  align-items: center;
+}
+
+.features-inner__content {
+  width: 40.17%;
+}
+
+.features-list {
+  margin: 28px 0 38px;
+}
+
+.features-item {
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+}
+
+.features-item_link {
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.66;
+}
+
+.features-inner__media {
+  margin-left: 130px;
+}
+
+.features__mobile-card {
+  position: relative;
+  padding: 38px;
+  width: 482px;
+  height: 322px;
+  background: #8476e3;
+}
+
+.features__mobile-card-heading {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 10px;
+  font-size: 2.4rem;
+}
+
+.features__mobile-card-money {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 98px;
+  font-size: 3.2rem;
+}
+
+.features__mobile-content {
+  column-gap: 26px;
+}
+
+.features__mobile-card-duration,
+.features__mobile-card-owner {
+  margin-bottom: 4px;
+  font-size: 2rem;
+}
+
+.features__mobile-card-date,
+.features__mobile-card-name {
+  font-size: 2.2rem;
+}
+
+.features-circles-top {
+  position: absolute;
+  top: 0;
+  left: 4px;
+}
+
+.features-circles-bottom {
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+}
+
+.features-noti {
+  position: absolute;
+  right: -88px;
+  top: -48px;
+  padding: 23px 13px;
+  display: flex;
+  align-items: center;
+  column-gap: 14px;
+  width: 276px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 14px 38px 0px rgba(0, 0, 0, 0.07);
+}
+
+.features-column {
+  width: 100%;
+}
+
+.features-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features-row:first-child {
+  margin-bottom: 4px;
+}
+
+.features-main-function,
+.features-calc {
+  color: var(--primary-color);
+  font-family: Inter;
+}
+
+.features-main-function {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.features-info,
+.features-time {
+  color: var(--secondary-color);
+  font-family: Inter;
+  font-size: 1rem;
+}
+
+.features-income {
+  position: absolute;
+  bottom: -55px;
+  right: -88px;
+  padding: 15px;
+  width: 120px;
+  border-radius: 16px;
+  background: #439f90;
+}
+
+.features-income__text {
+  margin: 14px 0 6px;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.features-income__money {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.features-inner__bottom {
+  margin-top: 160px;
+  flex-direction: row-reverse;
+}
+
+.features-inner__media--bottom {
+  width: 48.72%;
+  position: relative;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.features-image {
+  position: relative;
+}
+
+.features-image::after {
+  content: url(../img/features-bg.svg);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.features-img {
+  width: 413px;
+}
+
+.features-decor {
+  position: absolute;
+  right: 0;
+  bottom: 222px;
+  z-index: 1;
+}
+
+.features-card-bottom {
+  position: absolute;
+  bottom: 57px;
+  left: 263px;
+  padding: 28px;
+  width: 281px;
+  border-radius: 10px;
+  background-color: #fff;
+  filter: drop-shadow(0px 44px 48px rgba(0, 0, 0, 0.1));
+}
+
+.features-card-bottom__heading {
+  margin-bottom: 20px;
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.66;
+}
+
+.features-card-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+/* Testimonial */
+.testimonial {
+  margin-bottom: 160px;
+}
+
+.testimonial-row {
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.testimonial__heading {
+  margin-bottom: 18px;
+  width: 100%;
+}
+
+.testimonial__desc {
+  margin: 0 auto;
+  width: 435px;
+}
+
+.testimonial-list {
+  display: flex;
+  column-gap: 30px;
+}
+
+.testimonial-item__desc {
+  position: relative;
+  padding: 42px 28px;
+  background-color: #fff;
+  border: 1px solid #e3e6eb;
+  color: var(--secondary-color);
+  text-align: center;
+  font-size: 2.2rem;
+  font-style: italic;
+  line-height: 1.54;
+  border-radius: 10px;
+}
+
+.testimonial-item__desc::before {
+  content: "";
+  position: absolute;
+  bottom: -121px;
+  left: 50%;
+  translate: -50%;
+  border-top: 61px solid #e3e6eb;
+  border-left: 61px solid transparent;
+  border-right: 61px solid transparent;
+  border-bottom: 60px solid transparent;
+}
+
+.testimonial-item__desc::after {
+  content: "";
+  position: absolute;
+  bottom: -120px;
+  left: 50%;
+  translate: -50%;
+  border-top: 60px solid #fff;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 60px solid transparent;
+}
+
+.testimonial-item__desc:hover {
+  cursor: pointer;
+  filter: drop-shadow(0px 22px 54px rgba(0, 0, 0, 0.07));
+  border: transparent;
+}
+
+.testimonial-image {
+  margin-top: 98px;
+  position: relative;
+  left: 50%;
+  translate: -50%;
+  width: 104px;
+  height: 104px;
+  border-radius: 52px;
+  background: #4ab5e3;
+  overflow: hidden;
+}
+
+.testimonial-img {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: block;
+}
+
+.testimonial__name {
+  margin-top: 20px;
+  color: #070052;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 2.6rem;
+  font-weight: 600;
+  line-height: 1.38;
+}
+
+.testimonial__position {
+  margin-top: 2px;
+  color: var(--secondary-color);
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: 1.66; /* 166.667% */
+}
+
+.testimonial-item:last-child .testimonial-image {
+  background: #439f90;
+}
+
+.testimonial-arrow {
+  display: block;
+  margin: 38px auto 0;
 }
