@@ -824,7 +824,7 @@ a {
   color: var(--secondary-color);
   text-align: center;
   font-size: 1.8rem;
-  line-height: 1.66; /* 166.667% */
+  line-height: 1.66;
 }
 
 .testimonial-item:last-child .testimonial-image {
@@ -834,4 +834,151 @@ a {
 .testimonial-arrow {
   display: block;
   margin: 38px auto 0;
+}
+
+/* Blog */
+.blog {
+  margin-bottom: 160px;
+}
+
+.blog-row {
+  margin-bottom: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blog__intro {
+  margin-bottom: 6px;
+}
+
+.blog__heading {
+  margin-bottom: 18px;
+}
+
+.blog__desc {
+  width: 435px;
+}
+
+.blog__btn {
+  width: 123px;
+}
+
+.blog-list {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 30px;
+}
+
+.blog-item {
+  padding: 28px;
+  display: flex;
+  column-gap: 22px;
+  align-items: center;
+  border-radius: 12px;
+  border: 1px solid #dfe2e8;
+  background: #fff;
+}
+
+.blog-item:hover {
+  border: transparent;
+  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.07);
+  cursor: pointer;
+}
+
+.blog-item:hover .blog-link {
+  color: #7264d6;
+}
+
+.blog-img {
+  width: 160px;
+}
+
+.blog-date {
+  margin-bottom: 10px;
+  color: var(--secondary-color);
+  font-size: 1.4rem;
+  line-height: 1.71;
+}
+
+.blog-item__heading {
+  width: 332px;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.66;
+}
+
+.blog-link {
+  color: var(--secondary-color);
+  line-height: 1.62;
+}
+
+/* CTA */
+.cta {
+  margin-bottom: 100px;
+}
+
+.cta-inner {
+  padding: 100px 0;
+  position: relative;
+  border-radius: 24px;
+  background: #7264d6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cta__intro,
+.cta__heading,
+.cta__desc {
+  color: #fff;
+  text-align: center;
+}
+
+.cta__intro::before {
+  background: #fff;
+}
+
+.cta__heading {
+  width: 100%;
+}
+
+.cta__desc {
+  width: 435px;
+}
+
+.cta-images {
+  display: flex;
+  column-gap: 16px;
+}
+
+.cta-img:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.cta-star-01 {
+  position: absolute;
+  top: 49px;
+  left: 112px;
+}
+
+.cta-star-02 {
+  position: absolute;
+  top: 49px;
+  right: 112px;
+}
+
+.cta-star-03 {
+  position: absolute;
+  bottom: 49px;
+  left: 166px;
+}
+
+.cta-star-04 {
+  position: absolute;
+  bottom: 49px;
+  right: 166px;
 }
